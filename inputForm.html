@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Input Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="dontHover.html">Don't Hover</a></li>
+        <li><a href="ValumeSphere.html">Get Value Sphere</a></li>
+        <li><a href="twoButtons.html">Buttons Argument</a></li>
+        <li><a href="inputForm.html">Input Form</a></li>
+    </ul>
+    <p id="correct"></p> 
+   
+    <div class="theBody" >
+       
+            <form>
+                First name:<br>
+                <input type="text" name="firstname" value="name">
+                <br>
+                Last name:<br>
+                <input type="text" name="lastname" value="lastname">
+                <br>
+                Email:<br>
+                <input type="text" name="email" value="email">
+                <br>
+            </form>
+            Pasword:<br>
+            <input id="checkpas" type="password" required>
+            <br>
+            <button type="submit" onclick="CheckPassword()">submit</button>
+
+        
+    </div>
+    <script>
+        function CheckPassword() {
+            let passw =
+                document.getElementById("checkpas").value;
+
+            if (passw === "12345678") {
+
+                document.getElementById("correct").innerHTML = "You are logged in succesfully";
+                return true;
+
+            }
+            else {
+                alert('Wrong...!')
+                return false;
+            }
+        }
+    </script>
+    <script src="javaScript.js"></script>
+</body>
+
+</html>

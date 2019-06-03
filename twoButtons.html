@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Two Buttons</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body >
+
+        <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="dontHover.html">Don't Hover</a></li>
+                <li><a href="ValumeSphere.html">Get Value Sphere</a></li>
+                <li><a href="twoButtons.html">Buttons Argument</a></li>
+                <li><a href="inputForm.html">Input Form</a></li>
+              </ul>
+    <div class="theBody" >
+        <button class="buttons" onclick="myTest1()">A</button>
+        <p id="a"></p>
+        <button class="buttons" onclick="myTest2()">B</button>
+    </div>
+       
+    <script> 
+    let myTest1= ()=>{
+            document.getElementById("a").innerHTML= "I'm right!";
+        }
+        
+        let myTest2= ()=>{
+            
+            document.getElementById("a").innerHTML= "No, I'm right!";
+        
+           
+        }
+        </script>
+        <script src="javaScript.js"></script>
+</body>
+</html>
